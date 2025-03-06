@@ -1,0 +1,48 @@
+#Tutorial {
+    background-color: #64988A;
+    padding: 50px;
+    border-radius: 20px;
+}
+.Tutorial_Title {
+    /* margin: 50px 395px 601px; */
+    font-size: 48px;
+    color: #294933;
+    font-family: "Irish Grover", sans-serif;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Tutorial_Subtitle{
+
+    font-size: 24px;
+    color: black;
+    font-family: "JetBrains Mono", sans-serif;
+    text-align: center;
+}
+.Tutorial_Desc{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-family: "JetBrains mono", sans-serif;
+}
+.Tutorial_Start_Container {
+    margin-inline: auto;
+    width: max-content;
+}
+.Tutorial_Start{
+    position: relative;
+    background-color: #446B56;
+    color: #294933;
+    text-align: center;
+    border: 6px;
+    font-size: 24px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Tutorial_Start:hover{
+    background-color: #81EC86;
+}

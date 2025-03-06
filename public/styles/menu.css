@@ -1,0 +1,30 @@
+/* animation */
+@keyframes growShrink {
+    0% {
+        border-width: 4px;
+    }
+    50% {
+        border-width: 6px; /* Maximum border width */
+    }
+    100% {
+        border-width: 4px; /* Back to original */
+    }
+}
+
+.skill-option-selected {
+    border: dashed 5px white;
+    border-radius: 5px;
+    padding: 5px;
+
+    box-sizing: border-box; /* Use border-box so the border doesn't affect the element's dimensions */
+    animation: growShrink 1s infinite ease-in-out; /* 2s duration, infinite repetition, and easing */
+}
+
+.level-option-selected {
+    background-color: #1a8167a1;
+    border: double 5px rgb(63, 189, 58);
+    border-radius: 5px;
+    padding: 5px;
+
+    box-sizing: border-box;
+}

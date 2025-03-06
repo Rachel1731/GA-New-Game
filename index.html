@@ -5,11 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./public/styles/style.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <!-- Layout -->
+    <link rel="stylesheet" href="./public/styles/layout.css" />
+    <!-- Menu -->
+    <link rel="stylesheet" href="./public/styles/menu.css" />
+    <!-- Tutorial -->
+    <link rel="stylesheet" href="./public/styles/tutorial.css" />
+    <!-- Level -->
+    <link rel="stylesheet" href="./public/styles/levelSelection.css" />
+    <!-- Battle -->
+    <link rel="stylesheet" href="./public/styles/battle.css" />
+
 </head>
 
 <body>
+    <div style="
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* width: 1560px; */
+    /* height: 800px; */
+    height: 100vh;
+    width: 100vw;
+    ">
+        <img class="Game" src="./public/images/Game_Boy_Shell.png" alt="Background Image" style="
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        ">
+        <div style="
+        position: fixed;
+        /* background-color: rgba(255, 0, 0, 0.432); */
+        top: 20%;
+        width: 50%;
+        height: 60%;
+        ">
+            <!-- Tutorial Page -->
+            <div id="Tutorial" class="">
+                <!-- Title -->
+                <h1 class="Tutorial_Title">
+                    When Trees Attack
+                </h1>
+                <!-- Subtitle -->
+                <h3 class="Tutorial_Subtitle">
+                    How to play:
+                </h3>
+                <!-- Desc -->
+                <p class="Tutorial_Desc">
+                    Welcome to the world of the trees.
+                    Use the buttons on the screen to interact with the world, and fight monsters. Make sure to keep
+                    track of
+                    your health so that your character doesn’t die, so you can save the forest.
+                </p>
+                <!-- Start Button -->
+                <div class="Tutorial_Start_Container">
+                    <button class="Tutorial_Start">
+                        READY
+                    </button>
+                </div>
+            </div>
+            <!-- Levels Page -->
+            <div id="Level_Selection" class="hidden">
+                <img class="Level_Selection_Background_Image" src="./public/images/Level_Selection_Background.png"
+                    alt="Background Image" height="200px">
+                <!-- Levels/Options -->
+                <div class="Level_Selection_Menu">
+                    <!-- Title -->
+                    <h1 class="Level_Selection_Title">
+                        Level Selection
+                    </h1>
+                    <!-- Subtitle -->
+                    <h2 class="Level_Selection_Subtitle">
+                        Select a level:
+                    </h2>
+                    <!-- Levels -->
+                    <ul class="Level_Selection_Levels_List">
+                        <li id="1" class="Level_Selection_Level level-option-selected">Level. 1 - Slime</li>
+                        <li id="2" class="Level_Selection_Level">Level. 2 - Tree</li>
+                        <li id="3" class="Level_Selection_Level">Level. 3 - Mob</li>
+                        <li id="4" class="Level_Selection_Level">Level. 4 - Mob</li>
+                        <li id="5" class="Level_Selection_Level">Level. 5 - Mob</li>
+                    </ul>
+                </div>
+                <!-- Character -->
+                <div class="Level_Selection_Character">
+                    <h1 class="Level_Selection_Character_Title">Player</h1>
+                    <img src="./public/images/Main_Character.png" alt="Character Image" height="200px">
+                </div>
+            </div>
+            <!-- ------First Level Page ------------- -->
+            <div class="main hidden">
+                <img class="Battle_Background_Image" src="./public/images/main.jpg" alt="Forest Image">
+                <!-- Content -->
+                <div class="Content">
+                    <!-- Main Character -->
+                    <div class="Battle_Main_Character">
+                        <img class="Battle_Main_Character_Health" src="./public/images/life.png">
+                        <img class="Battle_Main_Character_Avatar" src="./public/images/main-cha.png" alt="">
+
+                    </div>
+                    <!-- Enemy Character -->
+                    <div class="Battle_Enemy">
+                        <img class="Battle_Enemy_Health" src="./public/images/enm.png">
+                        <img class="Battle_Enemy_Avatar" src="./public/images/slime.png">
+                    </div>
+                </div>
+                <!-- Options Selection -->
+                <div class="skills">
+                    <h2 class="skills_Title">Choose Your Options</h2>
+                    <img class="skills_Background_Image" src="./public/images/skills.png" alt="">
+                    <div class="attacks">
+                        <img class="sword skill-option-selected" src="./public/images/sword.png" alt="">
+                        <img class="shield" src="./public/images/shild.png" alt="">
+                        <img class="magic" src="./public/images/magic.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Tutorial Page -->
     <div id="Tutorial" class="hidden">
         <!-- Title -->
@@ -27,73 +141,69 @@
             your health so that your character doesn’t die, so you can save the forest.
         </p>
         <!-- Start Button -->
-        <button class="Tutorial_Start">
-            READY
-        </button>
+        <div class="Tutorial_Start_Container">
+            <button class="Tutorial_Start">
+                READY
+            </button>
+        </div>
     </div>
     <!-- Levels Page -->
-    <div id="Level_Selection" class="">
+    <div id="Level_Selection" class="hidden">
         <img class="Level_Selection_Background_Image" src="./public/images/Level_Selection_Background.png"
             alt="Background Image" height="200px">
-        <div class="center">
-            <!-- Levels/Options -->
-            <div class="Level_Selection_Menu">
-                <!-- Title -->
-                <h1 class="Level_Selection_Title">
-                    Level Selection
-                </h1>
-                <!-- Subtitle -->
-                <h2 class="Level_Selection_Subtitle">
-                    Select a level:
-                </h2>
-                <!-- Levels -->
-                <ul>
-                    <li id="1" class="Level_Selection_Level">Level. 1 - Slime</li>
-                    <li id="2" class="Level_Selection_Level">Level. 2 - Tree</li>
-                    <li id="3" class="Level_Selection_Level">Level. 3 - Mob</li>
-                    <li id="4" class="Level_Selection_Level">Level. 4 - Mob</li>
-                    <li id="5" class="Level_Selection_Level">Level. 5 - Mob</li>
-                </ul>
-            </div>
-            <!-- Character -->
-            <div class="Level_Selection_Character">
-                <h1>Player</h1>
-                <img src="./public/images/Main_Character.png" alt="Character Image" height="200px">
-            </div>
+        <!-- Levels/Options -->
+        <div class="Level_Selection_Menu">
+            <!-- Title -->
+            <h1 class="Level_Selection_Title">
+                Level Selection
+            </h1>
+            <!-- Subtitle -->
+            <h2 class="Level_Selection_Subtitle">
+                Select a level:
+            </h2>
+            <!-- Levels -->
+            <ul class="Level_Selection_Levels_List">
+                <li id="1" class="Level_Selection_Level level-option-selected">Level. 1 - Slime</li>
+                <li id="2" class="Level_Selection_Level">Level. 2 - Tree</li>
+                <li id="3" class="Level_Selection_Level">Level. 3 - Mob</li>
+                <li id="4" class="Level_Selection_Level">Level. 4 - Mob</li>
+                <li id="5" class="Level_Selection_Level">Level. 5 - Mob</li>
+            </ul>
+        </div>
+        <!-- Character -->
+        <div class="Level_Selection_Character">
+            <h1 class="Level_Selection_Character_Title">Player</h1>
+            <img src="./public/images/Main_Character.png" alt="Character Image" height="200px">
         </div>
     </div>
     <!-- ------First Level Page ------------- -->
-    <div class="c1">
-        <div class="main">
-            <div class="hp-enemy">
-                <img src="./public/images/enm.png">
+    <div class="main hidden">
+        <img class="Battle_Background_Image" src="./public/images/main.jpg" alt="Forest Image">
+        <!-- Content -->
+        <div class="Content">
+            <!-- Main Character -->
+            <div class="Battle_Main_Character">
+                <img class="Battle_Main_Character_Health" src="./public/images/life.png">
+                <img class="Battle_Main_Character_Avatar" src="./public/images/main-cha.png" alt="">
+
             </div>
-            <div class="slime">
-                <img src="./public/images/slime.png" alt=""
-                    style="width: 610px; height: 553px; margin-left: 1000px; margin-top: 300px; margin-left: -3471px;">
-            </div>
-            <div class="main-character">
-                <img src="./public/images/life.png">
-                <div class="main-char">
-                    <img src="./public/images/main-cha.png" alt="">
-                </div>
+            <!-- Enemy Character -->
+            <div class="Battle_Enemy">
+                <img class="Battle_Enemy_Health" src="./public/images/enm.png">
+                <img class="Battle_Enemy_Avatar" src="./public/images/slime.png">
             </div>
         </div>
+        <!-- Options Selection -->
         <div class="skills">
-            <img src="./public/images/skills.png" alt="">
+            <h2 class="skills_Title">Choose Your Options</h2>
+            <img class="skills_Background_Image" src="./public/images/skills.png" alt="">
             <div class="attacks">
-                <div class="sword">
-                    <img src="./public/images/sword.png" alt="">
-                </div>
-                <div class="shild">
-                    <img src="./public/images/shild.png" alt="">
-                </div>
-                <div class="magic">
-                    <img src="./public/images/magic.png" alt="">
-                </div>
+                <img class="sword skill-option-selected" src="./public/images/sword.png" alt="">
+                <img class="shield" src="./public/images/shild.png" alt="">
+                <img class="magic" src="./public/images/magic.png" alt="">
             </div>
         </div>
-    </div>    
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+html {
+    background-color: #000000;
+    /* margin: 1060px 651px; */
+}
+
+body {
+    background-image: url("./public/images/Level_Selection_Background.png");
+    background-size: cover; /* Makes the image cover the whole body */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-position: center center; /* Centers the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top: 200px; */
+    margin: 0px;
+}
+
+.hidden {
+    display: none !important;
+}
